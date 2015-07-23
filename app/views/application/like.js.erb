@@ -1,0 +1,3 @@
+var id = '<%= @picture.id %>';
+console.log(id);
+$('#like-' + id).replaceWith('<%= j render partial: 'like', locals: {picture: @picture} %>');
